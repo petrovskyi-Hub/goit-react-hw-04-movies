@@ -7,17 +7,15 @@ import ErrorView from '../../components/ErrorView/ErrorView';
 import noImageFound from '../../img/noimagefound.jpg';
 import s from './MovieDetailsPage.module.css';
 
-// const Cast = lazy(() =>
-//   import('../Cast' /* webpackChunkName: "cast-subview"*/),
-// );
+const Cast = lazy(() =>
+  import('../Cast/Cast' /* webpackChunkName: "cast-subview"*/),
+);
 
-// const Reviews = lazy(() =>
-//   import('../Reviews' /* webpackChunkName: "reviews-subview"*/),
-// );
+const Reviews = lazy(() =>
+  import('../Reviews/Reviews' /* webpackChunkName: "reviews-subview"*/),
+);
 
 function MovieDetailsPage() {
-  //   const history = useHistory();
-  //   const location = useLocation();
   const { movieId } = useParams();
   const { url, path } = useRouteMatch();
   const [movie, setMovie] = useState(null);
@@ -71,7 +69,7 @@ function MovieDetailsPage() {
             </div>
           </div>
 
-          {/* <ul className={s.nav}>
+          <ul className={s.nav}>
             <li>
               <NavLink
                 to={`${url}/cast`}
@@ -101,7 +99,7 @@ function MovieDetailsPage() {
             <Route path={`${path}/reviews`}>
               {status === Status.RESOLVED && <Reviews />}
             </Route>
-          </Suspense> */}
+          </Suspense>
         </>
       )}
     </main>

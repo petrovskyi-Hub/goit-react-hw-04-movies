@@ -7,6 +7,7 @@
   font-weight: 700;
   font-size: 40px;
   letter-spacing: 0.03em;
+  color: var(--secondaryTextColor);
 }
 
 .moviesList {
@@ -38,9 +39,8 @@
 .movieTitle {
   display: block;
   margin-top: 5px;
-  /* font-family: 'Bangers', sans-serif; */
   font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 0.14em;
+  font-size: 19px;
+  letter-spacing: 0.08em;
   color: var(--accentColor);
 }

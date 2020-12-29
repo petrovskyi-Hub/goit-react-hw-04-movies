@@ -15,15 +15,6 @@ function MoviesPage() {
   const [error, setError] = useState(null);
   const [status, setStatus] = useState(Status.IDLE);
 
-  //     useEffect(() => {
-  //     if (location.search === '') {
-  //       return;
-  //     }
-
-  //     const newSearch = new URLSearchParams(location.search).get('query');
-  //     setQuery(newSearch);
-  //   }, [location.search]);
-
   useEffect(() => {
     if (!query) {
       return;

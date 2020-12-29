@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import AppBar from './components/AppBar/AppBar';
 import Container from './components/Container/Container';
@@ -38,9 +38,7 @@ function App() {
             <MovieDetailsPage />
           </Route>
 
-          <Route>
-            <HomePage />
-          </Route>
+          <Redirect to="/" />
         </Switch>
       </Suspense>
 

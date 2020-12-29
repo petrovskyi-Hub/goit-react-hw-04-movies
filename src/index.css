@@ -1,7 +1,7 @@
 :root {
-  --primaryTextColor: #212121;
+  --primaryTextColor: #f1f2f5;
   --secondaryTextColor: #566573;
-  --accentColor: #1799d6;
+  --accentColor: #0c7fb4;
   --bgColor: lightgrey;
   --boxShadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
@@ -15,7 +15,6 @@ body {
   line-height: 1.5;
   color: var(--primaryTextColor);
   background-color: var(--bgColor);
-  padding-top: 30px;
   padding-bottom: 30px;
   /* background-image: url('./img/bg.jpg'); */
 }
